@@ -79,6 +79,11 @@ variable "image_family" {
   default = "ubuntu-2004-lts"
 }
 
+variable "image_source_family" {
+  type    = string
+  default = "ubuntu-2004-lts"
+}
+
 variable "preemptible" {
   type = bool
   default = true
