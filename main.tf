@@ -19,6 +19,7 @@ locals {
 
 data "yandex_compute_image" "my_image" {
   family = var.image_family
+  source_family = var.image_source_family
 }
 
 resource "yandex_compute_instance" "vm" {
